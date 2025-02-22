@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #333;
+    color: #eee;
+
+    min-height: 100vh;
+    max-width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    width: 100%;
+    padding: 3rem;
+
+    &__nav {
+        &__menu {
+            &__item {
+                font-size: 1.6rem;
+
+                a {
+                    text-decoration: none;
+                    color: #aaa;
+
+                    &:hover {
+                        color: #ccc;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+
+    background-color: #111;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    &__copy {
+        font-size: 1rem;
+    }
+
+    &__links {
+        &__list {
+            &__item {
+                a {
+                    svg {
+                        width: 2rem;
+                        height: 2rem;
+                        color: #aaa;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.homepage {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    padding: 5rem 0;
+    flex-grow: 2;
+
+    //border: .1rem solid;
+}
+
+.headline {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.picture {
+    width: 20rem;
+    height: 20rem;
+    background-color: #aaa;
+    border-radius: 50%;
+    border: 0.2rem solid #aaa;
+    position: relative;
+
+    img {
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: 0 40%;
+        transform: scale(.98);
+    }
+}
+
+.title {
+    font-size: 1.6rem;
+}
+
+.content {
+    width: 100%;
+    padding: 5rem 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #111;
+
+    border-top: .2rem solid #aaa;
+    border-bottom: .2rem solid #aaa;
+
+    flex-grow: 1;
+
+    .nav {
+        width: 100%;
+        max-width: 91.2rem;
+
+        &__menu {
+            display: flex;
+            justify-content: space-around;
+
+            @media (max-width: 460px) {
+                flex-direction: column;
+                align-items: center;
+                gap: 5rem;
+            }
+
+            &__item {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
