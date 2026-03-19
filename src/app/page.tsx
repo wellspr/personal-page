@@ -11,7 +11,7 @@ export default function Page() {
 				</div>
 
 				<div className="picture">
-					<Image src={profilePic} alt="Profile Pic" fill />
+					<Image src={profilePic} alt="Profile Pic" fill sizes="100%" />
 				</div>
 
 				<div className="title">
